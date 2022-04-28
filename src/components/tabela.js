@@ -8,18 +8,13 @@ function Tabela(){
     const [adicionando, setAdicionando] = useState(false);
 
     const [dados, setDados] = useState([{
-        nome: '',
-        cpf: '',
-        idade: '',
-        estadocivil: ''
-      }])
+        nome: 'Jander',
+        cpf: '113.254.746-42',
+        idade: 27,
+        estadocivil: 'Casado'
+    }])
     
-      const [novoaluno, setNovoaluno] = useState({
-        nome: '',
-        cpf: '',
-        idade: '',
-        estadocivil: ''
-      })
+      const [novoaluno, setNovoaluno] = useState({})
 
   
     function salvar(){
@@ -30,7 +25,8 @@ function Tabela(){
           dadoscopia.push(novoaluno)
           setDados(dadoscopia)
           setNovoaluno({nome: '', cpf: '', idade: '', estadocivil: ''})
-          setAdicionando(false)      
+          setAdicionando(false)
+                
         }      
       }
     return(
@@ -38,7 +34,7 @@ function Tabela(){
             {!adicionando ? (
             <div>
                 <h2>Alunos Cadastrados</h2>
-                <Table striped bordered hover style={{width: '40em'}}>
+                <Table striped bordered hover style={{width: '45em'}}>
                 <thead>
                     <tr>
                     <th>Nome</th>
@@ -47,7 +43,7 @@ function Tabela(){
                     <th>Estado Civil</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>                
                 {dados.map((dado) => (
                     <tr key={dado}>
                     <td>{dado.nome}</td>
