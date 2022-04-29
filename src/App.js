@@ -1,11 +1,7 @@
-import './style.css'
+import "./style.css";
+import Routes from "./components/routes";
 
-import Routes from './components/routes';
-
-function App() {  
-  return (
-      <Routes/>
-  );
+function App() {
+  return <Routes />;
 }
-
 export default App;

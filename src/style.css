@@ -1,38 +1,37 @@
-#fixo{
-    background-color: rgb(130, 48, 159);
+#fixo {
+  background-color: rgb(130, 48, 159);
 }
-.link{
-    text-decoration: none;
-    color: rgb(61, 1, 76);
+.link {
+  text-decoration: none;
+  color: rgb(61, 1, 76);
 }
-.link:hover{
-    color:#fff;
+.link:hover {
+  color: #fff;
 }
-ul{
-    padding: 10px;;
+ul {
+  padding: 10px;
 }
-li{
-    background-color: #fff;
-    text-align: center;
-    width: 80px;
-    border: 1px solid rgb(19, 0, 18);
-    border-radius: 30px;
-    list-style-type: none;
-    font-size: 20px;
-    margin-bottom: 15px;
-    margin-left: 25px;    
-    display: block;
-    cursor: pointer;
-    float: left;
+li {
+  background-color: #fff;
+  text-align: center;
+  width: 80px;
+  border: 1px solid rgb(19, 0, 18);
+  border-radius: 30px;
+  list-style-type: none;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  display: block;
+  cursor: pointer;
+  float: left;
 }
-li:hover{
-    background-color: rgb(157, 113, 168);
+li:hover {
+  background-color: rgb(157, 113, 168);
 }
-
-.logo{
-    width: 250px;
-    margin-top: 50px;
+.logo {
+  width: 250px;
+  margin-top: 50px;
 }
-.clear{
-    clear: both;
+.clear {
+  clear: both;
 }
