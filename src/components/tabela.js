@@ -5,14 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 function Tabela() {
   const [adicionando, setAdicionando] = useState(false);
 
-  const [dados, setDados] = useState([
-    {
-      nome: "Jander",
-      cpf: "113.254.746-42",
-      idade: 27,
-      estadocivil: "Casado",
-    },
-  ]);
+  const [dados, setDados] = useState([]);
 
   const [novoaluno, setNovoaluno] = useState({});
 

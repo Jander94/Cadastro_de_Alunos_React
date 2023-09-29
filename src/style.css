@@ -1,9 +1,11 @@
 #fixo {
   background-color: rgb(130, 48, 159);
+  margin-bottom: 50px;
 }
 .link {
   text-decoration: none;
   color: rgb(61, 1, 76);
+  padding: 20px;
 }
 .link:hover {
   color: #fff;
@@ -14,7 +16,6 @@ ul {
 li {
   background-color: #fff;
   text-align: center;
-  width: 80px;
   border: 1px solid rgb(19, 0, 18);
   border-radius: 30px;
   list-style-type: none;
