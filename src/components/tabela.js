@@ -28,9 +28,9 @@ function Tabela() {
   return (
     <div>
       {!adicionando ? (
-        <div>
+        <div style={{ width: "100%" }}>
           <h2>Alunos Cadastrados</h2>
-          <Table striped bordered hover style={{ width: "45em" }}>
+          <Table striped bordered hover style={{ width: "100%" }}>
             <thead>
               <tr>
                 <th>Nome</th>
@@ -105,10 +105,27 @@ function Tabela() {
               />
               <Form.Text className="text-muted"></Form.Text>
             </Form.Group>
-
-            <Button variant="success" onClick={salvar}>
-              Salvar
-            </Button>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-around",
+              }}
+            >
+              <Button
+                variant="success"
+                onClick={salvar}
+                style={{ width: "100px" }}
+              >
+                Salvar
+              </Button>
+              <Button
+                variant="success"
+                onClick={() => setAdicionando(false)}
+                style={{ width: "100px" }}
+              >
+                Cancelar
+              </Button>
+            </div>
           </Form>
         </div>
       )}
